@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Shaheryar Rafique">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        
+        <title>BasketBall ScoreBoard</title> 
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1 id="heading">Scoreboard</h1>
+            <hr>
+            <div class="column">
+                <div class="div-wrapper">
+                    
+                    <h1>Home</h1>
+                    <!-- Scorecard-->
+                    <div class="score-card">
+                        <h1 id="home-score">12</h1>
+                    </div>
+                    <!-- Incrementer-->
+                    <div class="btn-wrapper">
+                        <button class="btn" onclick="incrementOne('home')">+ 1</button>
+                        <button class="btn" onclick="incrementTwo('home')">+ 2</button>
+                        <button class="btn" onclick="incrementThree('home')">+ 3</button>
+                    </div>
+                </div>
+                
+                <div class="div-wrapper">
+                    <h1>Guest</h1>
+                    <!-- Scorecard-->
+                    <div class="score-card">
+                        <h1 id="guest-score">5</h1>
+                    </div>
+                    <!-- Incrementer-->
+                    <div class="btn-wrapper">
+                        <button class="btn" onclick="incrementOne('guest')">+ 1</button>
+                        <button class="btn" onclick="incrementTwo('guest')">+ 2</button>
+                        <button class="btn" onclick="incrementThree('guest')">+ 3</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <h2 id="lead-team">Team Leading: Home </h2>
+            <button id="reset-game" class="btn" onclick="reset()">Reset Game</button>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
